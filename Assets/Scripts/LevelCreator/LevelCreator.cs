@@ -18,6 +18,81 @@ public class LevelCreator : MonoBehaviour
         CreateLevel();
     }
 
+    // Gets the neighboring tile given a direction and a tile. Returns null if invalid
+    public BaseTile GetNeighboringTile(Direction dir, BaseTile tile)
+    {
+        // Calculate an offset based on dir and tile
+        int offset = 0;
+        int curIdx = tile.transform.GetSiblingIndex();
+        switch (dir)
+        {
+            case Direction.NORTH:
+                offset = -9;
+                break;
+
+            case Direction.SOUTH:
+                offset = 9;
+                break;
+
+            case Direction.EAST:
+                offset = 1;
+                break;
+
+            case Direction.WEST:
+                offset = -1;
+                break;
+
+            default:
+                return null;
+        }
+
+        // Check bounds
+        int newIdx = curIdx + offset;
+        if(newIdx < 0 || newIdx > 80)
+        {
+            return null;
+        }
+
+        Transform newTile = tile.transform.parent.GetChild(newIdx);
+
+        return newTile.GetComponent<BaseTile>(); 
+    }
+
+    public bool CanFeed(BaseTile src, BaseTile dst)
+    {
+        if(src == null || dst == null)
+        {
+            return false;
+        }
+
+        if(src.GetOutputDirection() != FindOppositeDir(dst.GetInputDirection()))
+        {
+            return false;
+        }
+
+        return true;
+    }
+
+    private Direction FindOppositeDir(Direction dir)
+    {
+        switch (dir)
+        {
+            case Direction.NORTH:
+                return Direction.SOUTH;
+
+            case Direction.SOUTH:
+                return Direction.NORTH;
+
+            case Direction.EAST:
+                return Direction.WEST;
+
+            case Direction.WEST:
+                return Direction.EAST;
+        }
+
+        return Direction.NORTH;
+    }
+
     // Creates the  grid of tiles
     void CreateLevel()
     {
@@ -37,6 +112,7 @@ public class LevelCreator : MonoBehaviour
 
                 newTile.SetInputDirection(curObject.input);
                 newTile.SetOutputDirection(curObject.output);
+                newTile.SetLevelCreator(this);
 
             }
         }
