@@ -29,6 +29,7 @@ public class CoopTile : BaseTile
             return;
         }
 
+        SoundManager.PlayCoop();
         _amtSpawned++;
         BaseEgg newEgg = Instantiate(_egg, spawnDestination.transform.position, Quaternion.identity).GetComponent<BaseEgg>();
         spawnDestination.OnGetEgg(newEgg);

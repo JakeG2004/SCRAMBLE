@@ -73,7 +73,7 @@ public class LevelCreator : MonoBehaviour
         return true;
     }
 
-    private Direction FindOppositeDir(Direction dir)
+    public Direction FindOppositeDir(Direction dir)
     {
         switch (dir)
         {
@@ -113,6 +113,7 @@ public class LevelCreator : MonoBehaviour
                 newTile.SetInputDirection(curObject.input);
                 newTile.SetOutputDirection(curObject.output);
                 newTile.SetLevelCreator(this);
+                newTile.UpdateSprite();
 
             }
         }

@@ -12,6 +12,8 @@ public class DirectionSelector : MonoBehaviour
 
     public void SetDirection(Direction dir)
     {
+        SoundManager.PlayPop();
+        
         // Handle setting source first if not clicked
         if(!_hasClicked)
         {
@@ -30,6 +32,12 @@ public class DirectionSelector : MonoBehaviour
     void OnEnable()
     {
         _hasClicked = false;
+    }
+
+    void Update()
+    {
+        transform.rotation = Quaternion.identity;
+        transform.localScale = transform.parent.localScale;
     }
 
     public BaseTile GetTile()

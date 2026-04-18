@@ -49,6 +49,7 @@ public class TableTile : BaseTile
     // Waits for 0.5 - 5 seconds then creates a new order
     private IEnumerator WaitForNewOrder()
     {
+        SoundManager.PlayYum();
         _anim.SetBool("isHappy", true);
         yield return new WaitForSeconds(2f);
         _anim.SetBool("isHappy", false);
@@ -59,6 +60,7 @@ public class TableTile : BaseTile
 
     private IEnumerator GetMad()
     {
+        SoundManager.PlayEw();
         _anim.SetBool("isMad", true);
         yield return new WaitForSeconds(2f);
         _anim.SetBool("isMad", false);

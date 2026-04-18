@@ -8,7 +8,7 @@ public class BaseTile : MonoBehaviour
 
     public virtual void Start()
     {
-        
+
     }
 
     public virtual void Update()
@@ -20,6 +20,7 @@ public class BaseTile : MonoBehaviour
     {
         egg.SetCurTile(this);
         egg.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        PlaySound();
     }
 
     private void OnMouseOver()
@@ -86,8 +87,13 @@ public class BaseTile : MonoBehaviour
         UpdateSprite();
     }
 
-    protected void UpdateSprite()
+    public virtual void UpdateSprite()
     {
 
+    }
+
+    public virtual void PlaySound()
+    {
+        
     }
 }
