@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b860049dd9df5adc5b775c92777e534d, type: 3}
+  m_Name: Objects
+  m_EditorClassIdentifier: 
+  baseTile: {fileID: 8499810892183274124, guid: 1381907cfa22e71b4b3822db07fdf8ca, type: 3}
+  coopTile: {fileID: 8499810892183274124, guid: 13a67ff66a894468baf34b496829bac0, type: 3}
+  beltTile: {fileID: 8499810892183274124, guid: 1cc31d9e33e3057afa3a88d8f6028c35, type: 3}
+  tableTile: {fileID: 8499810892183274124, guid: f8cef61ea88bfb30dbd40e7c72e32995, type: 3}
+  boilerTile: {fileID: 8499810892183274124, guid: 7faea043fc3d60689be5b35fd165f6f1, type: 3}
+  frierTile: {fileID: 8499810892183274124, guid: 5516090aa23955b1b80fb844383e73ae, type: 3}
+  scramblerTile: {fileID: 8499810892183274124, guid: a6a10a629715d81268c3a6c07217d522, type: 3}
+  sunnySideUpperTile: {fileID: 8499810892183274124, guid: f7b1b9b88afd7de6594cb0f6979f01d4, type: 3}
