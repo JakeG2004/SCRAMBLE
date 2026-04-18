@@ -22,9 +22,30 @@ public class BaseTile : MonoBehaviour
         egg.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
-    public virtual void OnClick()
+    private void OnMouseOver()
     {
+        OnHoverOver();
+    }
 
+    private void OnMouseExit()
+    {
+        OnHoverExit();
+    }
+
+    public virtual void OnHoverExit()
+    {
+        foreach(Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+    }
+
+    public virtual void OnHoverOver()
+    {
+        foreach(Transform child in transform)
+        {
+            child.gameObject.SetActive(true);
+        }
     }
 
     public bool CanMoveEgg()

@@ -3,8 +3,16 @@ using UnityEngine;
 public class BaseEgg : MonoBehaviour
 {
     [SerializeField] private float _movementPeriod = 1f;
-    private float _elapsedTime = 0f;
     [SerializeField] private BaseTile _curTile;
+    
+    private EggType _eggType;
+    private float _elapsedTime = 0f;
+    private SpriteRenderer _renderer;
+
+    void Start()
+    {
+        _renderer = GetComponent<SpriteRenderer>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -15,6 +23,39 @@ public class BaseEgg : MonoBehaviour
             MoveEgg();
             _elapsedTime = 0f;
         }
+    }
+
+    public void SetEggType(EggType newType)
+    {
+        _eggType = newType;
+
+        switch (_eggType)
+        {
+            case EggType.RAW:
+                _renderer.color = Color.green;
+                break;
+
+            case EggType.FRIED:
+                _renderer.color = Color.red;
+                break;
+
+            case EggType.SCRAMBLED:
+                _renderer.color = Color.yellow;
+                break;
+
+            case EggType.SUNNY_SIDE_UP:
+                _renderer.color = Color.blue;
+                break;
+
+            case EggType.BOILED:
+                _renderer.color = Color.white;
+                break;
+        }
+    }
+
+    public EggType GetEggType()
+    {
+        return _eggType;
     }
 
     public void SetCurTile(BaseTile tile)
@@ -31,4 +72,13 @@ public class BaseEgg : MonoBehaviour
 
         _curTile.GetOutputTile().OnGetEgg(this);
     }
+}
+
+public enum EggType
+{
+    RAW,
+    FRIED,
+    SCRAMBLED,
+    SUNNY_SIDE_UP,
+    BOILED
 }

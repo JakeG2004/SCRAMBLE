@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SunnySideUpperTile : BaseTile
+public class SunnySideUpperTile : MachineTile
 {
 
 }

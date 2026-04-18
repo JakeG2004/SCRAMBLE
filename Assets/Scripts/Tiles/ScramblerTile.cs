@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ScramblerTile : BaseTile
+public class ScramblerTile : MachineTile
 {
     
 }

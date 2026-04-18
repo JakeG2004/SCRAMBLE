@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FrierTile : BaseTile
+public class FrierTile : MachineTile
 {
 
 }

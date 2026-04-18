@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BoilerTile : BaseTile
+public class BoilerTile : MachineTile
 {
 
 }
