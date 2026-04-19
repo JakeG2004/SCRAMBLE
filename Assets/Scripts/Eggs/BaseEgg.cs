@@ -4,6 +4,12 @@ public class BaseEgg : MonoBehaviour
 {
     [SerializeField] private float _movementPeriod = 1f;
     [SerializeField] private BaseTile _curTile;
+
+    [SerializeField] private Sprite _rawEggSprite;
+    [SerializeField] private Sprite _friedEggSprite;
+    [SerializeField] private Sprite _boiledEggSprite;
+    [SerializeField] private Sprite _scrambledEggSprite;
+    [SerializeField] private Sprite _sunnySideUpEggSprite;
     
     private EggType _eggType;
     private float _elapsedTime = 0f;
@@ -32,23 +38,23 @@ public class BaseEgg : MonoBehaviour
         switch (_eggType)
         {
             case EggType.RAW:
-                _renderer.color = Color.green;
+                _renderer.sprite = _rawEggSprite;
                 break;
 
             case EggType.FRIED:
-                _renderer.color = Color.red;
+                _renderer.sprite = _friedEggSprite;
                 break;
 
             case EggType.SCRAMBLED:
-                _renderer.color = Color.yellow;
+                _renderer.sprite = _scrambledEggSprite;
                 break;
 
             case EggType.SUNNY_SIDE_UP:
-                _renderer.color = Color.blue;
+                _renderer.sprite = _sunnySideUpEggSprite;
                 break;
 
             case EggType.BOILED:
-                _renderer.color = Color.white;
+                _renderer.sprite = _boiledEggSprite;
                 break;
         }
     }

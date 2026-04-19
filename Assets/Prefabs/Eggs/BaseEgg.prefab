@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -1278019602, guid: 0c6eb441d9860296996a55352942f7a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,3 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementPeriod: 1
   _curTile: {fileID: 0}
+  _rawEggSprite: {fileID: -1278019602, guid: 0c6eb441d9860296996a55352942f7a3, type: 3}
+  _friedEggSprite: {fileID: 1268252139, guid: 0c6eb441d9860296996a55352942f7a3, type: 3}
+  _boiledEggSprite: {fileID: -310680071, guid: 0c6eb441d9860296996a55352942f7a3, type: 3}
+  _scrambledEggSprite: {fileID: 1000384741, guid: 0c6eb441d9860296996a55352942f7a3, type: 3}
+  _sunnySideUpEggSprite: {fileID: -339406130, guid: 0c6eb441d9860296996a55352942f7a3, type: 3}

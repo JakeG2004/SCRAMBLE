@@ -35,18 +35,12 @@ public class BaseTile : MonoBehaviour
 
     public virtual void OnHoverExit()
     {
-        foreach(Transform child in transform)
-        {
-            child.gameObject.SetActive(false);
-        }
+        transform.GetChild(0).gameObject.SetActive(false);
     }
 
     public virtual void OnHoverOver()
     {
-        foreach(Transform child in transform)
-        {
-            child.gameObject.SetActive(true);
-        }
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public bool CanMoveEgg()
@@ -94,6 +88,6 @@ public class BaseTile : MonoBehaviour
 
     public virtual void PlaySound()
     {
-        
+
     }
 }
