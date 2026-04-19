@@ -9,6 +9,12 @@ public class CoopTile : BaseTile
     private float _elapsedTime = 0f;
     private int _amtSpawned = 0;
 
+    public override void Start()
+    {
+        base.Start();
+        _elapsedTime = _spawnPeriod;
+    }
+
     public override void Update()
     {
         base.Update();
@@ -21,6 +27,11 @@ public class CoopTile : BaseTile
         }
     }
 
+    public void SetSpawnPeriod(float period)
+    {
+        _spawnPeriod = period;
+    }
+
     void SpawnEgg()
     {
         BaseTile spawnDestination = _lc.GetNeighboringTile(_outputDir, this);
@@ -30,7 +41,7 @@ public class CoopTile : BaseTile
         }
 
         SoundManager.PlayCoop();
-        _amtSpawned++;
+        //_amtSpawned++;
         BaseEgg newEgg = Instantiate(_egg, spawnDestination.transform.position, Quaternion.identity).GetComponent<BaseEgg>();
         spawnDestination.OnGetEgg(newEgg);
     }

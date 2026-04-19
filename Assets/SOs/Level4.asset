@@ -1,0 +1,271 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b96ac5d562fad5ba4b5ab5fbaf98d3, type: 3}
+  m_Name: Level4
+  m_EditorClassIdentifier: 
+  eggTypes: 0400000001000000
+  levelTime: 45
+  eggSpawnPeriod: 12
+  requiredAmt: 2
+  levelObjects:
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 1
+      input: 0
+      output: 2
+    - type: 3
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 3
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 1
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 3
+      input: 2
+      output: 1
+    - type: 3
+      input: 2
+      output: 3
+    - type: 3
+      input: 0
+      output: 1
+    - type: 3
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 1
+    - type: 0
+      input: 1
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 6
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 3
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 4
+      input: 0
+      output: 1
+    - type: 0
+      input: 1
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 3
+      input: 0
+      output: 2
+    - type: 3
+      input: 3
+      output: 2
+    - type: 3
+      input: 0
+      output: 1
+    - type: 3
+      input: 2
+      output: 3
+    - type: 3
+      input: 0
+      output: 3
+    - type: 0
+      input: 1
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 2
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 0
+      input: 1
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 2
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 1
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 2
+    - type: 0
+      input: 3
+      output: 2
+    - type: 0
+      input: 3
+      output: 2
+    - type: 0
+      input: 0
+      output: 1
+    - type: 0
+      input: 3
+      output: 2
+    - type: 0
+      input: 3
+      output: 2
+    - type: 0
+      input: 3
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0

@@ -14,16 +14,23 @@ public class BaseEgg : MonoBehaviour
     private EggType _eggType;
     private float _elapsedTime = 0f;
     private SpriteRenderer _renderer;
+    private Vector3 _initialPos = Vector3.zero;
 
     void Start()
     {
         _renderer = GetComponent<SpriteRenderer>();
+        _initialPos = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         _elapsedTime += Time.deltaTime;
+        if(_curTile.CanMoveEgg())
+        {
+            transform.position = Vector3.Lerp(_initialPos, _curTile.GetOutputTile().transform.position, _elapsedTime / _movementPeriod);
+        }
+        
         if(_elapsedTime >= _movementPeriod)
         {
             MoveEgg();
@@ -76,7 +83,9 @@ public class BaseEgg : MonoBehaviour
             return;
         }
 
+        _curTile.OnRemoveEgg();
         _curTile.GetOutputTile().OnGetEgg(this);
+        _initialPos = transform.position;
     }
 }
 

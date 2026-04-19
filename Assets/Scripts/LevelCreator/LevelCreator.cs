@@ -60,7 +60,7 @@ public class LevelCreator : MonoBehaviour
 
     public bool CanFeed(BaseTile src, BaseTile dst)
     {
-        if(src == null || dst == null)
+        if(src == null || dst == null || dst.HasEgg() || dst.GetObjectType() == ObjectType.NOTHING)
         {
             return false;
         }
@@ -110,13 +110,28 @@ public class LevelCreator : MonoBehaviour
 
                 BaseTile newTile = newObject.GetComponent<BaseTile>();
 
+                newTile.SetObjectType(curObject.type);
                 newTile.SetInputDirection(curObject.input);
                 newTile.SetOutputDirection(curObject.output);
                 newTile.SetLevelCreator(this);
                 newTile.UpdateSprite();
 
+                // Set egg types according to levelso
+                if(newTile is TableTile)
+                {
+                    ((TableTile)newTile).SetEggTypes(_level.eggTypes);
+                }
+
+                // Set egg spwn period
+                if(newTile is CoopTile)
+                {
+                    ((CoopTile)newTile).SetSpawnPeriod(_level.eggSpawnPeriod);
+                }
             }
         }
+
+        LevelManager.Instance.SetLevelTime(_level.levelTime);
+        LevelManager.Instance.SetRequiredAmt(_level.requiredAmt);
     }
 
     // Gets the type of tile to instance given the current type

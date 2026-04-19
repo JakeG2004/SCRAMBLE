@@ -106,7 +106,7 @@ MonoBehaviour:
   _inputDir: 0
   _outputDir: 0
   _lc: {fileID: 0}
-  _spawnPeriod: 1
+  _spawnPeriod: 5
   _amtToSpawn: 1
   _egg: {fileID: 7600106058611051641, guid: 15ad06199dc8852ea90231ea2e7f839a, type: 3}
 --- !u!61 &321333574504534613
@@ -167,7 +167,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: eed0ff1d9b27b921b901dd673fc3350f, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0

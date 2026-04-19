@@ -1,9 +1,14 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName="Level", menuName="SOs/LevelSO")]
 public class LevelSO : ScriptableObject
 {
-    public int levelIndex = 0;
+    public List<EggType> eggTypes = new();
+    public float levelTime = 120f;
+    public float eggSpawnPeriod = 10f;
+    public int requiredAmt = 0;
     public Row[] levelObjects = new Row[9];
 }
 

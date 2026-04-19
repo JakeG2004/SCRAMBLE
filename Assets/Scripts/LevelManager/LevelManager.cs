@@ -62,6 +62,16 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void SetLevelTime(float newTime)
+    {
+        _time = newTime;
+    }
+
+    public void SetRequiredAmt(int amt)
+    {
+        _scoreToBeat = amt;
+    }
+
     public void PauseScreen()
     {
         if(_gameIsPaused)
@@ -107,6 +117,7 @@ public class LevelManager : MonoBehaviour
 
     public void EndLevel()
     {
+        Time.timeScale = 0f;
         _levelIsComplete = true;
         ShowSummary();
     }

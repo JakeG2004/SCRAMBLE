@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class TableTile : BaseTile
 {
@@ -17,6 +18,7 @@ public class TableTile : BaseTile
     private bool _isMad = false;
     private SpriteRenderer _renderer;
     private Animator _anim;
+    private List<EggType> _availableTypes = new();
 
     public override void Start()
     {
@@ -24,6 +26,11 @@ public class TableTile : BaseTile
         _renderer = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         StartCoroutine(WaitAndOrder());
+    }
+
+    public void SetEggTypes(List<EggType> types)
+    {
+        _availableTypes = types;
     }
 
     public override void OnHoverOver()
@@ -59,10 +66,10 @@ public class TableTile : BaseTile
         StartCoroutine(GetHappy());
     }
 
-    // Chooses a new order
+    // Chooses a new egg based on the available eggs
     public void CreateNewOrder()
     {
-        _desiredType = (EggType)Random.Range(0, 4);
+        _desiredType = _availableTypes[Random.Range(0, _availableTypes.Count)];
         switch (_desiredType)
         {
             case EggType.RAW:
@@ -91,7 +98,7 @@ public class TableTile : BaseTile
 
     private IEnumerator WaitAndOrder()
     {
-        yield return new WaitForSeconds(Random.Range(0.5f, 5f));
+        yield return new WaitForSeconds(Random.Range(0.5f, 1f));
         CreateNewOrder();
     }
 

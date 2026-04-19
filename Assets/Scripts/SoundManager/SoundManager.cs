@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
@@ -40,6 +42,22 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         _as = GetComponent<AudioSource>();
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                GameObject clickedObject = EventSystem.current.currentSelectedGameObject;
+                
+                if (clickedObject != null && clickedObject.GetComponent<Button>() != null)
+                {
+                    SoundManager.PlayPop();
+                }
+            }
+        }
     }
 
     private void InternalPlayRandom(List<AudioClip> sounds)

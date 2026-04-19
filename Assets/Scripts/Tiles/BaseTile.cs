@@ -5,6 +5,8 @@ public class BaseTile : MonoBehaviour
     [SerializeField] protected Direction _inputDir;
     [SerializeField] protected Direction _outputDir;
     [SerializeField] protected LevelCreator _lc;
+    protected ObjectType _objectType;
+    protected bool _hasEgg = false;
 
     public virtual void Start()
     {
@@ -16,11 +18,36 @@ public class BaseTile : MonoBehaviour
 
     }
 
+    public void SetObjectType(ObjectType newType)
+    {
+        _objectType = newType;
+    }
+
+    public ObjectType GetObjectType()
+    {
+        return _objectType;
+    }
+
     public virtual void OnGetEgg(BaseEgg egg)
     {
+        if(this is not TableTile)
+        {
+            _hasEgg = true;
+        }
+
         egg.SetCurTile(this);
         egg.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         PlaySound();
+    }
+
+    public virtual void OnRemoveEgg()
+    {
+        _hasEgg = false;
+    }
+
+    public bool HasEgg()
+    {
+        return _hasEgg;
     }
 
     private void OnMouseOver()

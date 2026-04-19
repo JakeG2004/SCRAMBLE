@@ -745,7 +745,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Day 1
+  m_text: Day 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6cf8ff12d03fc224f987f93e5827d3de, type: 2}
   m_sharedMaterial: {fileID: 138576162887276425, guid: 6cf8ff12d03fc224f987f93e5827d3de, type: 2}
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {x: 0, y: 0, z: 0}
-  _nextLevel: Level2
+  _nextLevel: Level5
   _timerText: {fileID: 1870946848}
   _summaryText: {fileID: 1531428227}
   _nextButtonText: {fileID: 2004846895}
@@ -2956,7 +2956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17447f840f483c45682e3e430ee2c9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _level: {fileID: 11400000, guid: 61ca059dc7a61ae03a261ffcdc399f41, type: 2}
+  _level: {fileID: 11400000, guid: a9be1f44511592bf0b046ebed962cac9, type: 2}
   _objects: {fileID: 11400000, guid: 8b35aa7aef304361085540c28f59f3c2, type: 2}
   _tileGap: 1
 --- !u!1 &1775423412
@@ -3323,23 +3323,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _textbox: {fileID: 1479982720}
   _dialogue:
-  - Welcome to your first day at SCRAMBLE!
-  - In case you forgot, we're a restaurant.
-  - An egg-celent restaurant!
-  - heh... get it?
-  - Anyways!
-  - It's your first day! I'll show you the ropes.
-  - An egg will come out of the coop.
-  - It's your job to get it to the customer.
-  - You'll do that by changing the egg tiles.
-  - Confused? Don't worry! It's intuitive!
-  - Hover over a tile with your mouse.
-  - See the 4 boxes? They mean things!
-  - Red means that tile takes in an egg from there.
-  - Green means a tile spits an egg out from there!
-  - Use WASD to change the input / output.
-  - Looks like this customer wants a raw egg.
-  - Get it to them, rookie!
+  - How egg-citing it is to work with you!
+  - You've been doing great, rookie.
+  - Now, a new challenge.
+  - Another cooking style! The fried egg.
+  - It's an ancient craft, but you learn quick.
+  - Go get 'em, tiger.
   _onComplete:
     m_PersistentCalls:
       m_Calls:
