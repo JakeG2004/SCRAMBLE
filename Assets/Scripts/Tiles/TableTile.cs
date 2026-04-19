@@ -106,6 +106,7 @@ public class TableTile : BaseTile
     // Waits for 0.5 - 5 seconds then creates a new order
     private IEnumerator GetHappy()
     {
+        LevelManager.Instance.ServeCorrect();
         SoundManager.PlayYum();
         _anim.SetBool("isHappy", true);
         yield return new WaitForSeconds(2f);
@@ -117,6 +118,7 @@ public class TableTile : BaseTile
 
     private IEnumerator GetMad()
     {
+        LevelManager.Instance.ServeIncorrect();
         SoundManager.PlayEw();
         _anim.SetBool("isMad", true);
         yield return new WaitForSeconds(2f);
