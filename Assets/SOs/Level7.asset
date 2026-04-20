@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25b96ac5d562fad5ba4b5ab5fbaf98d3, type: 3}
-  m_Name: Level6
+  m_Name: Level7
   m_EditorClassIdentifier: 
-  eggTypes: 0000000002000000
-  levelTime: 45
-  eggSpawnPeriod: 5
-  requiredAmt: 5
+  eggTypes: 0400000002000000
+  levelTime: 120
+  eggSpawnPeriod: 1
+  requiredAmt: 20
   levelObjects:
   - rowObjects:
     - type: 0
@@ -23,16 +23,10 @@ MonoBehaviour:
       output: 0
     - type: 0
       input: 0
-      output: 1
-    - type: 1
+      output: 0
+    - type: 0
       input: 0
-      output: 1
-    - type: 0
-      input: 3
-      output: 2
-    - type: 0
-      input: 3
-      output: 1
+      output: 0
     - type: 0
       input: 0
       output: 0
@@ -45,30 +39,8 @@ MonoBehaviour:
     - type: 0
       input: 0
       output: 0
-  - rowObjects:
     - type: 0
       input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 1
-    - type: 3
-      input: 0
-      output: 1
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 1
-    - type: 0
-      input: 0
-      output: 0
-    - type: 3
-      input: 0
-      output: 1
-    - type: 0
-      input: 1
       output: 0
     - type: 0
       input: 0
@@ -79,63 +51,85 @@ MonoBehaviour:
       output: 0
     - type: 0
       input: 0
-      output: 1
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
     - type: 3
       input: 0
       output: 1
     - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 3
+      input: 2
+      output: 1
+    - type: 3
       input: 2
       output: 3
-    - type: 0
+    - type: 3
+      input: 2
+      output: 3
+    - type: 3
+      input: 2
+      output: 3
+    - type: 3
+      input: 0
+      output: 2
+    - type: 3
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 1
+  - rowObjects:
+    - type: 4
       input: 0
       output: 1
     - type: 0
-      input: 3
-      output: 2
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
     - type: 5
       input: 0
       output: 1
-    - type: 0
-      input: 3
-      output: 2
-    - type: 0
-      input: 3
-      output: 1
   - rowObjects:
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 1
-    - type: 3
-      input: 0
-      output: 1
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 1
-    - type: 0
-      input: 0
-      output: 0
-    - type: 3
-      input: 0
-      output: 1
-    - type: 0
-      input: 1
-      output: 0
-    - type: 0
-      input: 0
-      output: 1
-  - rowObjects:
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 1
     - type: 3
       input: 0
       output: 2
@@ -143,55 +137,42 @@ MonoBehaviour:
       input: 3
       output: 2
     - type: 3
-      input: 0
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 2
+    - type: 3
+      input: 2
       output: 1
+    - type: 3
+      input: 2
+      output: 3
+    - type: 3
+      input: 2
+      output: 3
     - type: 3
       input: 2
       output: 3
     - type: 3
       input: 0
       output: 3
-    - type: 0
-      input: 2
-      output: 3
-    - type: 0
-      input: 0
-      output: 3
   - rowObjects:
     - type: 0
       input: 0
       output: 0
     - type: 0
       input: 0
-      output: 1
+      output: 0
     - type: 0
       input: 0
-      output: 1
+      output: 0
     - type: 0
       input: 0
       output: 0
     - type: 2
       input: 0
-      output: 1
-    - type: 0
-      input: 0
       output: 0
-    - type: 0
-      input: 0
-      output: 1
-    - type: 0
-      input: 1
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-  - rowObjects:
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 1
     - type: 0
       input: 0
       output: 0
@@ -200,15 +181,6 @@ MonoBehaviour:
       output: 0
     - type: 0
       input: 0
-      output: 2
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 1
       output: 0
     - type: 0
       input: 0
@@ -219,24 +191,52 @@ MonoBehaviour:
       output: 0
     - type: 0
       input: 0
-      output: 2
-    - type: 0
-      input: 3
-      output: 2
-    - type: 0
-      input: 3
-      output: 2
+      output: 0
     - type: 0
       input: 0
-      output: 1
+      output: 0
     - type: 0
-      input: 3
-      output: 2
+      input: 0
+      output: 0
     - type: 0
-      input: 3
-      output: 2
+      input: 0
+      output: 0
     - type: 0
-      input: 3
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
       output: 0
     - type: 0
       input: 0

@@ -11,6 +11,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: 4396199528cd98ed39bdf9d394f5527a
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 3f30a1a25bdbd20968769166cd387e7c
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: d0be96f26803dd687b471054118a82ea
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 47945e893f8734429b65ef30ee0c4fd7
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: c5b149c0eb444662bacac35301d389c2
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: 4beedea1189947bbaa2a6e0430ee1787
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
+    guid: e81a485be3afe009cbd71629e11cb09d
+  - enabled: 1
+    path: Assets/Scenes/Level9.unity
+    guid: 11551ee65a03096d1bee41264722da11
+  - enabled: 1
+    path: Assets/Scenes/Level10.unity
+    guid: a712a73fa2eaa5bd792d4ab18c879e39
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: a0047ef86418669d2b7c0646ea3a2b99
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

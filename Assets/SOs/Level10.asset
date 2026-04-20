@@ -10,15 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25b96ac5d562fad5ba4b5ab5fbaf98d3, type: 3}
-  m_Name: TestLevel
+  m_Name: Level10
   m_EditorClassIdentifier: 
-  levelIndex: 0
+  eggTypes: 01000000020000000300000004000000
+  levelTime: 120
+  eggSpawnPeriod: 5
+  requiredAmt: 7
   levelObjects:
   - rowObjects:
     - type: 0
       input: 0
       output: 0
-    - type: 1
+    - type: 0
+      input: 0
+      output: 1
+    - type: 0
+      input: 0
+      output: 2
+    - type: 0
+      input: 3
+      output: 2
+    - type: 0
+      input: 3
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
       input: 0
       output: 1
     - type: 0
@@ -27,184 +45,169 @@ MonoBehaviour:
     - type: 0
       input: 0
       output: 0
+  - rowObjects:
     - type: 0
       input: 0
       output: 0
     - type: 0
       input: 0
+      output: 2
+    - type: 3
+      input: 1
+      output: 2
+    - type: 4
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 1
+    - type: 0
+      input: 0
+      output: 0
+    - type: 3
+      input: 1
+      output: 2
+    - type: 2
+      input: 3
       output: 0
     - type: 0
       input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 3
+      input: 1
+      output: 0
+    - type: 0
+      input: 2
+      output: 3
+    - type: 3
+      input: 0
+      output: 1
+    - type: 0
+      input: 3
+      output: 2
+    - type: 3
+      input: 1
+      output: 0
+    - type: 0
+      input: 3
+      output: 2
+    - type: 0
+      input: 3
+      output: 1
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 2
+    - type: 3
+      input: 1
+      output: 2
+    - type: 5
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 1
+    - type: 0
+      input: 1
+      output: 0
+    - type: 3
+      input: 1
       output: 0
     - type: 2
-      input: 0
+      input: 3
       output: 0
     - type: 0
-      input: 0
-      output: 0
-  - rowObjects:
-    - type: 0
-      input: 0
-      output: 0
-    - type: 3
       input: 0
       output: 1
-    - type: 0
+  - rowObjects:
+    - type: 1
       input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
+      output: 2
     - type: 3
-      input: 1
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
+      output: 2
+    - type: 0
+      input: 3
+      output: 2
+    - type: 3
+      input: 0
+      output: 2
+    - type: 3
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
       output: 0
     - type: 0
+      input: 2
+      output: 3
+    - type: 0
       input: 0
-      output: 0
+      output: 3
   - rowObjects:
     - type: 0
       input: 0
       output: 0
-    - type: 4
-      input: 0
-      output: 1
     - type: 0
       input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 3
-      input: 1
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-  - rowObjects:
-    - type: 0
-      input: 0
-      output: 0
+      output: 2
     - type: 3
       input: 0
-      output: 1
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 3
-      input: 1
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-  - rowObjects:
-    - type: 0
-      input: 0
-      output: 0
-    - type: 5
-      input: 0
-      output: 1
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 3
-      input: 1
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-  - rowObjects:
-    - type: 0
-      input: 0
-      output: 0
-    - type: 3
-      input: 0
-      output: 1
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 3
-      input: 1
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-  - rowObjects:
-    - type: 0
-      input: 0
-      output: 0
+      output: 2
     - type: 6
-      input: 0
-      output: 1
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
-      output: 0
-    - type: 0
-      input: 0
+      input: 3
+      output: 2
+    - type: 3
+      input: 3
       output: 0
     - type: 0
       input: 0
       output: 0
     - type: 3
+      input: 0
+      output: 1
+    - type: 2
+      input: 3
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+  - rowObjects:
+    - type: 0
+      input: 0
+      output: 0
+    - type: 0
+      input: 0
+      output: 1
+    - type: 3
+      input: 0
+      output: 1
+    - type: 0
+      input: 3
+      output: 2
+    - type: 3
+      input: 1
+      output: 0
+    - type: 0
+      input: 0
+      output: 0
+    - type: 3
+      input: 0
+      output: 1
+    - type: 0
       input: 1
       output: 0
     - type: 0
@@ -214,6 +217,9 @@ MonoBehaviour:
     - type: 0
       input: 0
       output: 0
+    - type: 0
+      input: 1
+      output: 2
     - type: 3
       input: 0
       output: 2
@@ -222,17 +228,14 @@ MonoBehaviour:
       output: 2
     - type: 3
       input: 3
-      output: 2
-    - type: 3
+      output: 0
+    - type: 0
       input: 3
       output: 2
     - type: 3
-      input: 3
+      input: 0
       output: 2
-    - type: 3
-      input: 3
-      output: 2
-    - type: 3
+    - type: 2
       input: 3
       output: 0
     - type: 0

@@ -3,16 +3,13 @@ using UnityEngine;
 public class CoopTile : BaseTile
 {
     [SerializeField] private float _spawnPeriod = 1f;
-    [SerializeField] private int _amtToSpawn = 1;
     [SerializeField] private GameObject _egg;
 
-    private float _elapsedTime = 0f;
-    private int _amtSpawned = 0;
+    [SerializeField] private float _elapsedTime = 0f;
 
     public override void Start()
     {
         base.Start();
-        _elapsedTime = _spawnPeriod;
     }
 
     public override void Update()
@@ -20,28 +17,33 @@ public class CoopTile : BaseTile
         base.Update();
 
         _elapsedTime += Time.deltaTime;
-        if((_elapsedTime >= _spawnPeriod) && (_amtSpawned < _amtToSpawn))
+        if((_elapsedTime >= _spawnPeriod))
         {
             SpawnEgg();
             _elapsedTime = 0f;
         }
     }
 
+    public override void OnHoverOver()
+    {
+        
+    }
+
     public void SetSpawnPeriod(float period)
     {
         _spawnPeriod = period;
+        _elapsedTime = _spawnPeriod;
     }
 
     void SpawnEgg()
     {
         BaseTile spawnDestination = _lc.GetNeighboringTile(_outputDir, this);
-        if(spawnDestination == null || !_lc.CanFeed(this, spawnDestination))
+        if(spawnDestination == null || spawnDestination.HasEgg())
         {
             return;
         }
 
         SoundManager.PlayCoop();
-        //_amtSpawned++;
         BaseEgg newEgg = Instantiate(_egg, spawnDestination.transform.position, Quaternion.identity).GetComponent<BaseEgg>();
         spawnDestination.OnGetEgg(newEgg);
     }

@@ -12,6 +12,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private TMP_Text _timerText;
     [SerializeField] private TMP_Text _summaryText;
     [SerializeField] private TMP_Text _nextButtonText;
+    [SerializeField] private TMP_Text _requirementText;
     [SerializeField] private GameObject _summary;
     [SerializeField] private GameObject _pauseScreen;
     [SerializeField] private int _scoreToBeat = 0;
@@ -69,6 +70,7 @@ public class LevelManager : MonoBehaviour
 
     public void SetRequiredAmt(int amt)
     {
+        _requirementText.text = "Serve " + amt + " egg" + ((amt != 1) ? "s" : "");
         _scoreToBeat = amt;
     }
 
@@ -127,12 +129,14 @@ public class LevelManager : MonoBehaviour
         string summaryText = "Score: " + _stats.x + "\nSuccesses: " + _stats.y + "\nFailures: " + _stats.z;
         if(_stats.x >= _scoreToBeat)
         {
-            summaryText += "\nCongrats. You keep your job!";
+            SoundManager.PlaySuccess();
+            summaryText += "\nCongrats! You keep your job!";
             _nextButtonText.text = "Next";
         }
 
         else 
         {
+            SoundManager.PlayFail();
             summaryText += "\nYou're fired!";
             _nextButtonText.text = "Retry";
         }

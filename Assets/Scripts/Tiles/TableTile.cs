@@ -116,6 +116,7 @@ public class TableTile : BaseTile
         LevelManager.Instance.ServeCorrect();
         SoundManager.PlayYum();
         _anim.SetBool("isHappy", true);
+        _eggSprite.sprite = null;
         yield return new WaitForSeconds(2f);
         _anim.SetBool("isHappy", false);
         _isHappy = false;
@@ -128,9 +129,11 @@ public class TableTile : BaseTile
         LevelManager.Instance.ServeIncorrect();
         SoundManager.PlayEw();
         _anim.SetBool("isMad", true);
+        _eggSprite.sprite = null;
         yield return new WaitForSeconds(2f);
         _anim.SetBool("isMad", false);
-
         _isMad = false;
+
+        CreateNewOrder();
     }
 }

@@ -54,7 +54,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7cbb542d2663190fa885f549fe2ed2a4, type: 3}
   _successSounds:
   - {fileID: 8300000, guid: 915bbf58033102b5e8ecae702eb42c1d, type: 3}
-  _failSounds: []
+  _failSounds:
+  - {fileID: 8300000, guid: e9b79a8f262e8a966903578b5ee14dc4, type: 3}
   _yumSounds:
   - {fileID: 8300000, guid: bc1c803533e0f800fa2311eb135044e1, type: 3}
   - {fileID: 8300000, guid: 2f76c0a39e05a85d69311412166c54ed, type: 3}
